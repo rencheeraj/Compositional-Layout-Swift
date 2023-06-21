@@ -29,7 +29,7 @@ class ViewController: UIViewController , UICollectionViewDataSource{
         let leadingItem = NSCollectionLayoutItem(layoutSize: leadingItemSize)
         leadingItem.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         // Leading Group
-        let leadingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .fractionalHeight(0.8))
+        let leadingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .fractionalHeight(1))
         let leadingGroup = NSCollectionLayoutGroup.vertical(layoutSize: leadingGroupSize, repeatingSubitem: leadingItem, count: 1)
         // Trailing item Size
         let trailingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
@@ -37,7 +37,7 @@ class ViewController: UIViewController , UICollectionViewDataSource{
         let trailingItem = NSCollectionLayoutItem(layoutSize: trailingItemSize)
         trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
         // Trailing Group Size
-        let trailingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(0.4))
+        let trailingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(0.5))
         // Trailing Group
         let trailingGroup = NSCollectionLayoutGroup.vertical(layoutSize: trailingGroupSize, repeatingSubitem: trailingItem, count: 2)
         
